@@ -1,0 +1,29 @@
+{
+  "sample_size": 10,
+  "cohens_kappa": 0.6153846153846154,
+  "interpretation": "Substantial agreement - đủ tốt cho monitoring, nhưng chưa nên dùng làm nhãn tuyệt đối trong production khi chưa mở rộng human labels.",
+  "human_labels": [
+    "B",
+    "B",
+    "B",
+    "B",
+    "B",
+    "B",
+    "A",
+    "B",
+    "B",
+    "B"
+  ],
+  "judge_labels": [
+    "B",
+    "B",
+    "B",
+    "B",
+    "B",
+    "B",
+    "A",
+    "B",
+    "B",
+    "A"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "total_cases": 10,
+  "positive_cases": 8,
+  "negative_cases": 2,
+  "positive_detection_rate": 1.0,
+  "negative_pass_rate": 1.0,
+  "average_latency_ms": 14.24,
+  "note": "input_guard.py dùng Presidio nếu có local spaCy model; nếu không có thì fallback regex/local heuristic để vẫn chạy được khi chấm offline."
+}

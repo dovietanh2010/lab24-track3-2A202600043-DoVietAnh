@@ -1,0 +1,11 @@
+question_id,human_winner,confidence,notes
+1,B,High,Câu trả lời B chi tiết hơn và đưa ra nguồn điều luật
+2,B,High,Câu trả lời B giải thích đầy đủ hơn với thông tin cụ thể
+3,B,Medium,Câu trả lời B có viện dẫn nghị định rõ ràng hơn
+4,B,High,Câu trả lời B phân biệt rõ 2 loại dữ liệu
+5,B,High,Câu trả lời B liệt kê đầy đủ 11 quyền chủ thể
+6,B,Medium,Cả hai đều tốt nhưng B có thêm nhận định
+7,A,Low,Hai câu trả lời tương tự nhưng A ngắn gọn hơn
+8,B,High,Câu trả lời B đưa ra định nghĩa chính xác từ Điều 2
+9,B,High,Câu trả lời B giải thích vai trò của bên xử lý rõ ràng
+10,B,Medium,Câu trả lời B nói rõ trường hợp khẩn cấp y tế an ninh

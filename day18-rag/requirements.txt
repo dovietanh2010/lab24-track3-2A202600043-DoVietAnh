@@ -1,0 +1,12 @@
+underthesea 
+rank_bm25 
+qdrant-client 
+sentence-transformers 
+transformers == 4.37.2
+numpy 
+ragas 
+datasets 
+openai 
+python-dotenv 
+torch
+FlagEmbedding

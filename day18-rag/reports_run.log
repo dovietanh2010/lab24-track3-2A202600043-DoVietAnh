@@ -1,0 +1,45 @@
+The cache for model files in Transformers v4.22.0 has been updated. Migrating your old cache. This is a one-time only operation. You can interrupt this and resume the migration later on by calling `transformers.utils.move_cache()`.
+============================================================
+LAB 18: PRODUCTION RAG PIPELINE
+============================================================
+
+📌 STEP 1: Running Basic RAG Baseline...
+----------------------------------------
+0it [00:00, ?it/s]0it [00:00, ?it/s]
+C:\Users\DELL\AppData\Local\Programs\Python\Python311\Lib\site-packages\huggingface_hub\file_download.py:949: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+C:\Users\DELL\AppData\Local\Programs\Python\Python311\Lib\site-packages\huggingface_hub\file_download.py:143: UserWarning: `huggingface_hub` cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in C:\Users\DELL\.cache\huggingface\hub\models--BAAI--bge-m3. Caching files will still work but in a degraded version that might require more space on your disk. This warning can be disabled by setting the `HF_HUB_DISABLE_SYMLINKS_WARNING` environment variable. For more details, see https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn(message)
+============================================================
+BASIC RAG BASELINE
+(paragraph chunking + dense-only, no rerank, no enrichment)
+============================================================
+  166 basic paragraph chunks
+Batches:   0%|          | 0/6 [00:00<?, ?it/s]Batches:  17%|█▋        | 1/6 [01:10<05:52, 70.60s/it]Batches:  33%|███▎      | 2/6 [01:51<03:33, 53.41s/it]Batches:  50%|█████     | 3/6 [02:18<02:03, 41.03s/it]Batches:  67%|██████▋   | 4/6 [02:35<01:03, 31.73s/it]Batches:  83%|████████▎ | 5/6 [02:55<00:27, 27.45s/it]Batches: 100%|██████████| 6/6 [02:59<00:00, 19.35s/it]Batches: 100%|██████████| 6/6 [02:59<00:00, 29.87s/it]
+C:\Users\DELL\AppData\Local\Programs\Python\Python311\Lib\site-packages\instructor\providers\gemini\client.py:5: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai  # type: ignore[import-not-found]
+Evaluating:   0%|          | 0/80 [00:00<?, ?it/s]LLM returned 1 generations instead of requested 3. Proceeding with 1 generations.
+LLM returned 1 generations instead of requested 3. Proceeding with 1 generations.
+LLM returned 1 generations instead of requested 3. Proceeding with 1 generations.
+LLM returned 1 generations instead of requested 3. Proceeding with 1 generations.
+Evaluating:   1%|▏         | 1/80 [00:47<1:02:42, 47.62s/it]Evaluating:   9%|▉         | 7/80 [00:51<06:43,  5.53s/it]  Evaluating:  11%|█▏        | 9/80 [01:07<07:23,  6.25s/it]Evaluating:  12%|█▎        | 10/80 [01:30<10:48,  9.26s/it]Evaluating:  20%|██        | 16/80 [01:33<04:13,  3.96s/it]Evaluating:  21%|██▏       | 17/80 [01:43<05:02,  4.79s/it]LLM returned 1 generations instead of requested 3. Proceeding with 1 generations.
+Evaluating:  29%|██▉       | 23/80 [01:50<02:45,  2.91s/it]LLM returned 1 generations instead of requested 3. Proceeding with 1 generations.
+Evaluating:  30%|███       | 24/80 [01:55<02:51,  3.06s/it]Evaluating:  31%|███▏      | 25/80 [02:14<04:52,  5.32s/it]Evaluating:  35%|███▌      | 28/80 [02:21<03:40,  4.24s/it]Evaluating:  36%|███▋      | 29/80 [02:28<03:50,  4.52s/it]Evaluating:  38%|███▊      | 30/80 [02:29<03:20,  4.01s/it]Evaluating:  39%|███▉      | 31/80 [02:31<02:57,  3.62s/it]LLM returned 1 generations instead of requested 3. Proceeding with 1 generations.
+Evaluating:  40%|████      | 32/80 [02:44<04:34,  5.71s/it]Evaluating:  44%|████▍     | 35/80 [02:54<03:23,  4.52s/it]Evaluating:  48%|████▊     | 38/80 [03:00<02:28,  3.53s/it]LLM returned 1 generations instead of requested 3. Proceeding with 1 generations.
+Evaluating:  50%|█████     | 40/80 [03:12<02:49,  4.23s/it]Evaluating:  52%|█████▎    | 42/80 [03:20<02:33,  4.03s/it]Evaluating:  54%|█████▍    | 43/80 [03:24<02:31,  4.11s/it]LLM returned 1 generations instead of requested 3. Proceeding with 1 generations.
+Evaluating:  56%|█████▋    | 45/80 [03:38<02:57,  5.07s/it]Evaluating:  59%|█████▉    | 47/80 [03:41<02:06,  3.85s/it]Evaluating:  60%|██████    | 48/80 [03:48<02:24,  4.51s/it]Evaluating:  61%|██████▏   | 49/80 [03:55<02:35,  5.01s/it]LLM returned 1 generations instead of requested 3. Proceeding with 1 generations.
+Evaluating:  62%|██████▎   | 50/80 [04:04<03:00,  6.01s/it]Evaluating:  64%|██████▍   | 51/80 [04:07<02:28,  5.12s/it]LLM returned 1 generations instead of requested 3. Proceeding with 1 generations.
+Evaluating:  65%|██████▌   | 52/80 [04:28<04:21,  9.33s/it]Evaluating:  71%|███████▏  | 57/80 [04:30<01:22,  3.59s/it]Evaluating:  72%|███████▎  | 58/80 [04:39<01:36,  4.39s/it]LLM returned 1 generations instead of requested 3. Proceeding with 1 generations.
+Evaluating:  75%|███████▌  | 60/80 [04:46<01:22,  4.14s/it]Evaluating:  76%|███████▋  | 61/80 [04:51<01:20,  4.23s/it]Exception raised in Job[54]: APIConnectionError(Connection error.)
+Evaluating:  79%|███████▉  | 63/80 [04:53<00:54,  3.20s/it]LLM returned 1 generations instead of requested 3. Proceeding with 1 generations.
+Evaluating:  81%|████████▏ | 65/80 [05:04<00:59,  3.94s/it]Evaluating:  82%|████████▎ | 66/80 [05:07<00:50,  3.63s/it]LLM returned 1 generations instead of requested 3. Proceeding with 1 generations.
+Evaluating:  84%|████████▍ | 67/80 [05:28<01:37,  7.48s/it]Evaluating:  89%|████████▉ | 71/80 [05:31<00:33,  3.73s/it]LLM returned 1 generations instead of requested 3. Proceeding with 1 generations.
+Evaluating:  90%|█████████ | 72/80 [05:43<00:40,  5.03s/it]Evaluating:  91%|█████████▏| 73/80 [05:45<00:32,  4.60s/it]Evaluating:  92%|█████████▎| 74/80 [05:47<00:23,  3.88s/it]Evaluating:  94%|█████████▍| 75/80 [05:53<00:22,  4.42s/it]Evaluating:  95%|█████████▌| 76/80 [05:54<00:14,  3.62s/it]Evaluating:  96%|█████████▋| 77/80 [05:55<00:09,  3.03s/it]Evaluating:  98%|█████████▊| 78/80 [05:58<00:05,  2.95s/it]Evaluating: 100%|██████████| 80/80 [05:59<00:00,  1.94s/it]Evaluating: 100%|██████████| 80/80 [05:59<00:00,  4.50s/it]

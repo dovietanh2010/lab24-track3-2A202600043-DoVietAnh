@@ -1,0 +1,81 @@
+{
+  "aggregate": {
+    "faithfulness": 0.925,
+    "answer_relevancy": 0.4696175358786081,
+    "context_precision": 0.9499999999358334,
+    "context_recall": 0.8833333333333332
+  },
+  "num_questions": 20,
+  "failures": [
+    {
+      "question": "Kỳ tính thuế của tờ khai thuế giá trị gia tăng trong file BCTC.pdf là kỳ nào?",
+      "worst_metric": "faithfulness",
+      "score": 0.0,
+      "diagnosis": "LLM hallucinating",
+      "suggested_fix": "Tighten prompt, lower temperature"
+    },
+    {
+      "question": "Dữ liệu cá nhân nhạy cảm bao gồm những thông tin nào theo Nghị định 13/2023/NĐ-CP?",
+      "worst_metric": "answer_relevancy",
+      "score": 0.38531815897596583,
+      "diagnosis": "Answer doesn't match question",
+      "suggested_fix": "Improve prompt template"
+    },
+    {
+      "question": "Việc xử lý dữ liệu cá nhân của trẻ em từ đủ 7 tuổi trở lên cần sự đồng ý của ai?",
+      "worst_metric": "faithfulness",
+      "score": 0.5,
+      "diagnosis": "LLM hallucinating",
+      "suggested_fix": "Tighten prompt, lower temperature"
+    },
+    {
+      "question": "Dữ liệu cá nhân có được mua bán dưới mọi hình thức không?",
+      "worst_metric": "context_recall",
+      "score": 0.5,
+      "diagnosis": "Missing relevant chunks",
+      "suggested_fix": "Improve chunking or add BM25"
+    },
+    {
+      "question": "Thuế giá trị gia tăng phát sinh trong kỳ là bao nhiêu?",
+      "worst_metric": "answer_relevancy",
+      "score": 0.31472259703919864,
+      "diagnosis": "Answer doesn't match question",
+      "suggested_fix": "Improve prompt template"
+    },
+    {
+      "question": "Thuế giá trị gia tăng còn được khấu trừ kỳ trước chuyển sang là bao nhiêu?",
+      "worst_metric": "answer_relevancy",
+      "score": 0.3564926862576287,
+      "diagnosis": "Answer doesn't match question",
+      "suggested_fix": "Improve prompt template"
+    },
+    {
+      "question": "Thuế GTGT còn phải nộp trong kỳ và số thuế chuyển kỳ sau là bao nhiêu?",
+      "worst_metric": "answer_relevancy",
+      "score": 0.36428389049448384,
+      "diagnosis": "Answer doesn't match question",
+      "suggested_fix": "Improve prompt template"
+    },
+    {
+      "question": "Hàng hóa, dịch vụ bán ra chịu thuế GTGT trong kỳ có giá trị và tiền thuế là bao nhiêu?",
+      "worst_metric": "answer_relevancy",
+      "score": 0.36751857981676883,
+      "diagnosis": "Answer doesn't match question",
+      "suggested_fix": "Improve prompt template"
+    },
+    {
+      "question": "Người nộp thuế và mã số thuế trên tờ khai GTGT là gì?",
+      "worst_metric": "answer_relevancy",
+      "score": 0.36842602253048484,
+      "diagnosis": "Answer doesn't match question",
+      "suggested_fix": "Improve prompt template"
+    },
+    {
+      "question": "Giá trị và thuế GTGT của hàng hóa, dịch vụ mua vào trong kỳ là bao nhiêu?",
+      "worst_metric": "answer_relevancy",
+      "score": 0.38274454910636607,
+      "diagnosis": "Answer doesn't match question",
+      "suggested_fix": "Improve prompt template"
+    }
+  ]
+}

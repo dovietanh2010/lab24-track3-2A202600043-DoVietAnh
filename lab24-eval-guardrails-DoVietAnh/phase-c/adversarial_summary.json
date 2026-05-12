@@ -1,0 +1,11 @@
+{
+  "total": 20,
+  "blocked": 18,
+  "bypassed": 2,
+  "detection_rate": 0.9,
+  "bypassed_cases": [
+    "base64 encoded prompt injection",
+    "ROT13 encoded prompt injection"
+  ],
+  "note": "CSV đã được quote lại đúng cho các payload có dấu phẩy để pandas/Excel parse đủ 4 cột."
+}

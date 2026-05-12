@@ -1,0 +1,82 @@
+[
+  {
+    "question": "Theo Nghị định 13/2023/NĐ-CP, dữ liệu cá nhân là gì?",
+    "ground_truth": "Theo khoản 1 Điều 2 Nghị định 13/2023/NĐ-CP, dữ liệu cá nhân là thông tin dưới dạng ký hiệu, chữ viết, chữ số, hình ảnh, âm thanh hoặc dạng tương tự trên môi trường điện tử gắn liền với một con người cụ thể hoặc giúp xác định một con người cụ thể. Dữ liệu cá nhân bao gồm dữ liệu cá nhân cơ bản và dữ liệu cá nhân nhạy cảm."
+  },
+  {
+    "question": "Dữ liệu cá nhân cơ bản bao gồm những nhóm thông tin nào theo Nghị định 13/2023/NĐ-CP?",
+    "ground_truth": "Theo khoản 3 Điều 2 Nghị định 13/2023/NĐ-CP, dữ liệu cá nhân cơ bản bao gồm họ tên, ngày tháng năm sinh hoặc ngày chết/mất tích, giới tính, nơi sinh và các địa chỉ cư trú/liên hệ, quốc tịch, hình ảnh cá nhân, số điện thoại, số giấy tờ định danh như CMND/CCCD/hộ chiếu/giấy phép lái xe, biển số xe, mã số thuế cá nhân, số BHXH, số thẻ BHYT, tình trạng hôn nhân, thông tin về quan hệ gia đình, thông tin tài khoản số và dữ liệu phản ánh hoạt động trên không gian mạng, cùng các thông tin khác gắn với hoặc giúp xác định một con người cụ thể không thuộc dữ liệu cá nhân nhạy cảm."
+  },
+  {
+    "question": "Dữ liệu cá nhân nhạy cảm bao gồm những thông tin nào theo Nghị định 13/2023/NĐ-CP?",
+    "ground_truth": "Theo khoản 4 Điều 2 Nghị định 13/2023/NĐ-CP, dữ liệu cá nhân nhạy cảm là dữ liệu gắn với quyền riêng tư mà khi bị xâm phạm sẽ ảnh hưởng trực tiếp tới quyền và lợi ích hợp pháp của cá nhân, gồm quan điểm chính trị, quan điểm tôn giáo, tình trạng sức khỏe và đời tư trong hồ sơ bệnh án, nguồn gốc chủng tộc hoặc dân tộc, đặc điểm di truyền, đặc điểm vật lý/sinh học riêng, đời sống hoặc xu hướng tình dục, dữ liệu về tội phạm, thông tin khách hàng của tổ chức tín dụng/ngân hàng/trung gian thanh toán, dữ liệu vị trí qua dịch vụ định vị và dữ liệu cá nhân đặc thù khác theo pháp luật."
+  },
+  {
+    "question": "Dữ liệu cá nhân có được mua bán dưới mọi hình thức không?",
+    "ground_truth": "Không. Theo khoản 4 Điều 3 Nghị định 13/2023/NĐ-CP, dữ liệu cá nhân không được mua, bán dưới mọi hình thức, trừ trường hợp luật có quy định khác."
+  },
+  {
+    "question": "Chủ thể dữ liệu có quyền rút lại sự đồng ý cho phép xử lý dữ liệu cá nhân không?",
+    "ground_truth": "Có. Theo khoản 4 Điều 9 Nghị định 13/2023/NĐ-CP, chủ thể dữ liệu được quyền rút lại sự đồng ý của mình, trừ trường hợp luật có quy định khác."
+  },
+  {
+    "question": "Có thể xử lý dữ liệu cá nhân mà không cần sự đồng ý của chủ thể dữ liệu trong các trường hợp nào?",
+    "ground_truth": "Theo Điều 17 Nghị định 13/2023/NĐ-CP, việc xử lý dữ liệu cá nhân không cần sự đồng ý trong các trường hợp: khẩn cấp cần xử lý ngay để bảo vệ tính mạng, sức khỏe của chủ thể dữ liệu hoặc người khác; công khai dữ liệu cá nhân theo quy định của luật; cơ quan nhà nước có thẩm quyền xử lý trong tình trạng khẩn cấp về quốc phòng, an ninh quốc gia, trật tự an toàn xã hội, thảm họa lớn, dịch bệnh nguy hiểm hoặc phòng chống tội phạm theo luật; để thực hiện nghĩa vụ theo hợp đồng của chủ thể dữ liệu; và phục vụ hoạt động của cơ quan nhà nước đã được quy định theo luật chuyên ngành."
+  },
+  {
+    "question": "Việc xử lý dữ liệu cá nhân của trẻ em từ đủ 7 tuổi trở lên cần sự đồng ý của ai?",
+    "ground_truth": "Theo khoản 2 Điều 20 Nghị định 13/2023/NĐ-CP, xử lý dữ liệu cá nhân của trẻ em từ đủ 7 tuổi trở lên phải có sự đồng ý của trẻ em và sự đồng ý của cha, mẹ hoặc người giám hộ theo quy định, trừ trường hợp quy định tại Điều 17."
+  },
+  {
+    "question": "Khi phát hiện vi phạm quy định bảo vệ dữ liệu cá nhân, Bên Kiểm soát dữ liệu phải thông báo cho cơ quan nào và trong thời hạn bao lâu?",
+    "ground_truth": "Theo khoản 1 Điều 23 Nghị định 13/2023/NĐ-CP, Bên Kiểm soát dữ liệu cá nhân hoặc Bên Kiểm soát và xử lý dữ liệu cá nhân phải thông báo cho Bộ Công an, cụ thể là Cục An ninh mạng và phòng, chống tội phạm sử dụng công nghệ cao, chậm nhất 72 giờ sau khi xảy ra hành vi vi phạm. Nếu thông báo sau 72 giờ thì phải kèm lý do chậm."
+  },
+  {
+    "question": "Hồ sơ đánh giá tác động xử lý dữ liệu cá nhân phải được gửi cho ai và trong thời hạn nào?",
+    "ground_truth": "Theo khoản 4 Điều 24 Nghị định 13/2023/NĐ-CP, Hồ sơ đánh giá tác động xử lý dữ liệu cá nhân phải luôn có sẵn để phục vụ kiểm tra, đánh giá của Bộ Công an và phải gửi Bộ Công an, cụ thể là Cục An ninh mạng và phòng, chống tội phạm sử dụng công nghệ cao, 01 bản chính theo Mẫu số 04 trong thời gian 60 ngày kể từ ngày tiến hành xử lý dữ liệu cá nhân."
+  },
+  {
+    "question": "Cơ quan chuyên trách bảo vệ dữ liệu cá nhân ở Việt Nam là cơ quan nào?",
+    "ground_truth": "Theo khoản 1 Điều 29 Nghị định 13/2023/NĐ-CP, cơ quan chuyên trách bảo vệ dữ liệu cá nhân là Cục An ninh mạng và phòng, chống tội phạm sử dụng công nghệ cao thuộc Bộ Công an; cơ quan này giúp Bộ Công an thực hiện quản lý nhà nước về bảo vệ dữ liệu cá nhân."
+  },
+  {
+    "question": "Tờ khai thuế giá trị gia tăng trong file BCTC.pdf áp dụng mẫu số nào?",
+    "ground_truth": "Tờ khai trong file BCTC.pdf là Tờ khai thuế giá trị gia tăng mẫu số 01/GTGT, ban hành kèm theo Thông tư số 80/2021/TT-BTC ngày 29 tháng 9 năm 2021 của Bộ trưởng Bộ Tài chính."
+  },
+  {
+    "question": "Kỳ tính thuế của tờ khai thuế giá trị gia tăng trong file BCTC.pdf là kỳ nào?",
+    "ground_truth": "Kỳ tính thuế trên tờ khai thuế giá trị gia tăng là Quý 4 năm 2024."
+  },
+  {
+    "question": "Người nộp thuế và mã số thuế trên tờ khai GTGT là gì?",
+    "ground_truth": "Người nộp thuế trên tờ khai là CÔNG TY CỔ PHẦN DHA SURFACES, mã số thuế 0106769437."
+  },
+  {
+    "question": "Hoạt động sản xuất kinh doanh được ghi tại chỉ tiêu [01a] của tờ khai là gì?",
+    "ground_truth": "Chỉ tiêu [01a] ghi tên hoạt động sản xuất kinh doanh là Hoạt động sản xuất kinh doanh thông thường."
+  },
+  {
+    "question": "Thuế giá trị gia tăng còn được khấu trừ kỳ trước chuyển sang là bao nhiêu?",
+    "ground_truth": "Chỉ tiêu [22] trên tờ khai ghi thuế giá trị gia tăng còn được khấu trừ kỳ trước chuyển sang là 77.377.803 đồng."
+  },
+  {
+    "question": "Giá trị và thuế GTGT của hàng hóa, dịch vụ mua vào trong kỳ là bao nhiêu?",
+    "ground_truth": "Theo mục I của tờ khai, chỉ tiêu [23] ghi giá trị hàng hóa, dịch vụ mua vào là 2.405.743.241 đồng và chỉ tiêu [24] ghi thuế giá trị gia tăng tương ứng là 215.163.767 đồng."
+  },
+  {
+    "question": "Hàng hóa, dịch vụ bán ra chịu thuế GTGT trong kỳ có giá trị và tiền thuế là bao nhiêu?",
+    "ground_truth": "Theo mục II của tờ khai, chỉ tiêu [27] ghi giá trị hàng hóa, dịch vụ bán ra chịu thuế GTGT là 3.703.688.610 đồng và chỉ tiêu [28] ghi thuế GTGT là 344.675.400 đồng."
+  },
+  {
+    "question": "Tổng doanh thu và thuế GTGT của hàng hóa, dịch vụ bán ra là bao nhiêu?",
+    "ground_truth": "Tờ khai ghi tổng doanh thu của hàng hóa, dịch vụ bán ra tại chỉ tiêu [34] là 3.703.688.610 đồng và tổng thuế GTGT tại chỉ tiêu [35] là 344.675.400 đồng."
+  },
+  {
+    "question": "Thuế giá trị gia tăng phát sinh trong kỳ là bao nhiêu?",
+    "ground_truth": "Chỉ tiêu [36] trên tờ khai ghi thuế giá trị gia tăng phát sinh trong kỳ là 129.511.633 đồng."
+  },
+  {
+    "question": "Thuế GTGT còn phải nộp trong kỳ và số thuế chuyển kỳ sau là bao nhiêu?",
+    "ground_truth": "Tờ khai ghi thuế giá trị gia tăng còn phải nộp trong kỳ tại chỉ tiêu [40] là 52.133.830 đồng. Chỉ tiêu [43] về thuế giá trị gia tăng còn được khấu trừ chuyển kỳ sau là 0 đồng."
+  }
+]

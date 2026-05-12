@@ -1,0 +1,85 @@
+============================================================
+PRODUCTION RAG PIPELINE
+============================================================
+
+[1/3] Chunking documents...
+  353 chunks from 2 documents
+
+[2/4] Enriching chunks (M5) — SKIPPED (fast mode, raw chunks)...
+  ⚠️  M5 not implemented — using raw chunks (fallback)
+
+[3/4] Indexing (BM25 + Dense)...
+C:\Users\DELL\AppData\Local\Programs\Python\Python311\Lib\site-packages\huggingface_hub\file_download.py:949: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Batches:   0%|          | 0/12 [00:00<?, ?it/s]Batches:   8%|▊         | 1/12 [00:18<03:22, 18.38s/it]Batches:  17%|█▋        | 2/12 [00:39<03:17, 19.71s/it]Batches:  25%|██▌       | 3/12 [00:48<02:15, 15.08s/it]Batches:  33%|███▎      | 4/12 [01:07<02:12, 16.55s/it]Batches:  42%|████▏     | 5/12 [01:23<01:54, 16.36s/it]Batches:  50%|█████     | 6/12 [01:35<01:28, 14.77s/it]Batches:  58%|█████▊    | 7/12 [01:45<01:06, 13.33s/it]Batches:  67%|██████▋   | 8/12 [02:01<00:56, 14.11s/it]Batches:  75%|███████▌  | 9/12 [02:13<00:40, 13.45s/it]Batches:  83%|████████▎ | 10/12 [02:25<00:26, 13.15s/it]Batches:  92%|█████████▏| 11/12 [02:39<00:13, 13.38s/it]Batches: 100%|██████████| 12/12 [02:39<00:00,  9.41s/it]Batches: 100%|██████████| 12/12 [02:39<00:00, 13.33s/it]
+
+[4/4] Loading reranker...
+
+[Eval] Running queries...
+C:\Users\DELL\AppData\Local\Programs\Python\Python311\Lib\site-packages\huggingface_hub\file_download.py:949: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+C:\Users\DELL\AppData\Local\Programs\Python\Python311\Lib\site-packages\huggingface_hub\file_download.py:143: UserWarning: `huggingface_hub` cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in C:\Users\DELL\.cache\huggingface\hub\models--BAAI--bge-reranker-v2-m3. Caching files will still work but in a degraded version that might require more space on your disk. This warning can be disabled by setting the `HF_HUB_DISABLE_SYMLINKS_WARNING` environment variable. For more details, see https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn(message)
+  [1/20] Theo Nghị định 13/2023/NĐ-CP, dữ liệu cá nhân là g...
+  [2/20] Dữ liệu cá nhân cơ bản bao gồm những nhóm thông ti...
+  [3/20] Dữ liệu cá nhân nhạy cảm bao gồm những thông tin n...
+  [4/20] Dữ liệu cá nhân có được mua bán dưới mọi hình thức...
+  [5/20] Chủ thể dữ liệu có quyền rút lại sự đồng ý cho phé...
+  [6/20] Có thể xử lý dữ liệu cá nhân mà không cần sự đồng ...
+  [7/20] Việc xử lý dữ liệu cá nhân của trẻ em từ đủ 7 tuổi...
+  [8/20] Khi phát hiện vi phạm quy định bảo vệ dữ liệu cá n...
+  [9/20] Hồ sơ đánh giá tác động xử lý dữ liệu cá nhân phải...
+  [10/20] Cơ quan chuyên trách bảo vệ dữ liệu cá nhân ở Việt...
+  [11/20] Tờ khai thuế giá trị gia tăng trong file BCTC.pdf ...
+  [12/20] Kỳ tính thuế của tờ khai thuế giá trị gia tăng tro...
+  [13/20] Người nộp thuế và mã số thuế trên tờ khai GTGT là ...
+  [14/20] Hoạt động sản xuất kinh doanh được ghi tại chỉ tiê...
+  [15/20] Thuế giá trị gia tăng còn được khấu trừ kỳ trước c...
+  [16/20] Giá trị và thuế GTGT của hàng hóa, dịch vụ mua vào...
+  [17/20] Hàng hóa, dịch vụ bán ra chịu thuế GTGT trong kỳ c...
+  [18/20] Tổng doanh thu và thuế GTGT của hàng hóa, dịch vụ ...
+  [19/20] Thuế giá trị gia tăng phát sinh trong kỳ là bao nh...
+  [20/20] Thuế GTGT còn phải nộp trong kỳ và số thuế chuyển ...
+
+[Eval] Running RAGAS...
+C:\Users\DELL\AppData\Local\Programs\Python\Python311\Lib\site-packages\instructor\providers\gemini\client.py:5: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai  # type: ignore[import-not-found]
+Evaluating:   0%|          | 0/80 [00:00<?, ?it/s]LLM returned 1 generations instead of requested 3. Proceeding with 1 generations.
+Evaluating:   1%|▏         | 1/80 [00:09<12:58,  9.85s/it]LLM returned 1 generations instead of requested 3. Proceeding with 1 generations.
+LLM returned 1 generations instead of requested 3. Proceeding with 1 generations.
+LLM returned 1 generations instead of requested 3. Proceeding with 1 generations.
+Evaluating:   2%|▎         | 2/80 [00:57<41:44, 32.12s/it]LLM returned 1 generations instead of requested 3. Proceeding with 1 generations.
+LLM returned 1 generations instead of requested 3. Proceeding with 1 generations.
+Evaluating:  11%|█▏        | 9/80 [01:32<10:30,  8.88s/it]Evaluating:  18%|█▊        | 14/80 [01:33<05:21,  4.86s/it]Evaluating:  19%|█▉        | 15/80 [01:44<06:02,  5.57s/it]Evaluating:  25%|██▌       | 20/80 [01:55<04:05,  4.09s/it]LLM returned 1 generations instead of requested 3. Proceeding with 1 generations.
+Evaluating:  26%|██▋       | 21/80 [02:05<04:38,  4.71s/it]Evaluating:  29%|██▉       | 23/80 [02:07<03:38,  3.84s/it]Evaluating:  30%|███       | 24/80 [02:12<03:44,  4.01s/it]Evaluating:  32%|███▎      | 26/80 [02:17<03:09,  3.51s/it]LLM returned 1 generations instead of requested 3. Proceeding with 1 generations.
+Evaluating:  34%|███▍      | 27/80 [02:27<04:04,  4.61s/it]Evaluating:  36%|███▋      | 29/80 [02:36<03:52,  4.56s/it]LLM returned 1 generations instead of requested 3. Proceeding with 1 generations.
+Evaluating:  40%|████      | 32/80 [02:51<03:48,  4.76s/it]LLM returned 1 generations instead of requested 3. Proceeding with 1 generations.
+Evaluating:  42%|████▎     | 34/80 [03:00<03:38,  4.76s/it]Evaluating:  44%|████▍     | 35/80 [03:05<03:32,  4.72s/it]Evaluating:  46%|████▋     | 37/80 [03:07<02:32,  3.55s/it]Evaluating:  48%|████▊     | 38/80 [03:11<02:36,  3.73s/it]LLM returned 1 generations instead of requested 3. Proceeding with 1 generations.
+Evaluating:  49%|████▉     | 39/80 [03:19<03:04,  4.49s/it]LLM returned 1 generations instead of requested 3. Proceeding with 1 generations.
+LLM returned 1 generations instead of requested 3. Proceeding with 1 generations.
+Evaluating:  50%|█████     | 40/80 [03:37<05:11,  7.78s/it]Evaluating:  54%|█████▍    | 43/80 [03:49<03:33,  5.77s/it]Evaluating:  56%|█████▋    | 45/80 [03:51<02:30,  4.30s/it]Evaluating:  59%|█████▉    | 47/80 [03:58<02:13,  4.04s/it]Evaluating:  60%|██████    | 48/80 [03:59<01:53,  3.54s/it]LLM returned 1 generations instead of requested 3. Proceeding with 1 generations.
+Evaluating:  61%|██████▏   | 49/80 [04:13<02:55,  5.65s/it]Evaluating:  64%|██████▍   | 51/80 [04:21<02:25,  5.03s/it]LLM returned 1 generations instead of requested 3. Proceeding with 1 generations.
+Evaluating:  65%|██████▌   | 52/80 [04:44<04:08,  8.86s/it]Evaluating:  72%|███████▎  | 58/80 [04:49<01:21,  3.70s/it]Evaluating:  75%|███████▌  | 60/80 [04:54<01:07,  3.36s/it]LLM returned 1 generations instead of requested 3. Proceeding with 1 generations.
+Evaluating:  76%|███████▋  | 61/80 [05:09<01:35,  5.00s/it]Evaluating:  80%|████████  | 64/80 [05:17<01:06,  4.15s/it]Evaluating:  84%|████████▍ | 67/80 [05:23<00:44,  3.42s/it]LLM returned 1 generations instead of requested 3. Proceeding with 1 generations.
+Evaluating:  85%|████████▌ | 68/80 [05:31<00:48,  4.02s/it]Evaluating:  86%|████████▋ | 69/80 [05:33<00:40,  3.71s/it]Evaluating:  88%|████████▊ | 70/80 [05:35<00:34,  3.44s/it]Evaluating:  89%|████████▉ | 71/80 [05:37<00:28,  3.17s/it]LLM returned 1 generations instead of requested 3. Proceeding with 1 generations.
+LLM returned 1 generations instead of requested 3. Proceeding with 1 generations.
+Evaluating:  90%|█████████ | 72/80 [06:05<01:10,  8.87s/it]Evaluating:  96%|█████████▋| 77/80 [06:09<00:11,  3.87s/it]Evaluating:  99%|█████████▉| 79/80 [06:11<00:03,  3.14s/it]Evaluating: 100%|██████████| 80/80 [06:14<00:00,  3.02s/it]Evaluating: 100%|██████████| 80/80 [06:14<00:00,  4.68s/it]
+
+============================================================
+PRODUCTION RAG SCORES
+============================================================
+  ✓ faithfulness: 0.9250
+  ✗ answer_relevancy: 0.4696
+  ✓ context_precision: 0.9500
+  ✓ context_recall: 0.8833
+Report saved to ragas_report.json
+
+Total: 962.1s

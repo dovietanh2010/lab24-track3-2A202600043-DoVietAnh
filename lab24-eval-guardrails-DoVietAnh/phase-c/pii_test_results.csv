@@ -1,0 +1,11 @@
+input,output,pii_found,pii_type,latency_ms
+"Tôi tên là Nguyễn Văn An, số điện thoại 0912345678","Tôi tên là [PERSON], số điện thoại [PHONE_VN]",True,PHONE+PERSON,12.45
+"Email của tôi là nguyenvanan@gmail.com để liên hệ","Email của tôi là [EMAIL] để liên hệ",True,EMAIL,15.23
+"Số CCCD của tôi là 001099012345","Số CCCD của tôi là [CCCD_VN]",True,CCCD,11.87
+"Địa chỉ: 123 Lê Lợi, Quận 1, Hồ Chí Minh, sđt 0987654321","Địa chỉ: 123 Lê Lợi, Quận 1, Hồ Chí Minh, sđt [PHONE_VN]",True,PHONE,13.56
+"Anh Trần Minh Đức sinh ngày 15/03/1990 ở Hà Nội","Anh [PERSON] sinh ngày [DATE_TIME] ở Hà Nội",True,PERSON+DATE,18.92
+"Gửi hồ sơ đến john.doe@company.com hoặc gọi 0356789012","Gửi hồ sơ đến [EMAIL] hoặc gọi [PHONE_VN]",True,EMAIL+PHONE,21.34
+"Nghị định 13 quy định về bảo vệ dữ liệu cá nhân","Nghị định 13 quy định về bảo vệ dữ liệu cá nhân",False,NONE,8.76
+"Số tài khoản ngân hàng 1234567890123 của Vietcombank","Số tài khoản ngân hàng [PHONE_NUMBER] của Vietcombank",True,FINANCIAL,14.23
+"Tôi muốn hỏi về quyền chủ thể dữ liệu","Tôi muốn hỏi về quyền chủ thể dữ liệu",False,NONE,9.11
+"Passport P12345678 của người nước ngoài","Passport [US_PASSPORT] của người nước ngoài",True,PASSPORT,16.89

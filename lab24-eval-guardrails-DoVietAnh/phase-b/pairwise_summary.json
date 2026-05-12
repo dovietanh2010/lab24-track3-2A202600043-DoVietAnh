@@ -1,0 +1,12 @@
+{
+  "total": 30,
+  "winner_counts": {
+    "A": 7,
+    "B": 22,
+    "tie": 1
+  },
+  "production_win_rate": 0.7333333333333333,
+  "baseline_win_rate": 0.23333333333333334,
+  "tie_rate": 0.03333333333333333,
+  "note": "Summary được tính từ pairwise_results.csv hiện tại. Script pairwise_judge.py đã được sửa để lưu riêng run1_winner và run2_winner cho lần chạy lại."
+}
