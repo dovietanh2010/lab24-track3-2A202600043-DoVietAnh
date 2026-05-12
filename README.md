@@ -18,8 +18,10 @@ Bài lab mở rộng pipeline RAG từ Day 18 bằng 4 phần chính:
 ```text
 lab24-eval-guardrails-DoVietAnh/
 |-- .github/workflows/eval-gate.yml
+|-- .env.example
 |-- requirements.txt
-|-- README.md
+|-- prompts.md
+|-- README.md            # hoặc thay bằng link YouTube trong README
 |
 |-- phase-a/
 |   |-- generate_testset.py
@@ -104,7 +106,7 @@ Blueprint gồm SLO, sơ đồ kiến trúc Mermaid, 3 alert playbooks và phân
 pip install -r requirements.txt
 ```
 
-Cấu hình `.env`:
+Cấu hình `.env` từ `.env.example`:
 
 ```bash
 OPENAI_API_KEY=...
