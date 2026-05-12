@@ -21,7 +21,7 @@ lab24-eval-guardrails-DoVietAnh/
 |-- .env.example
 |-- requirements.txt
 |-- prompts.md
-|-- README.md        
+|-- README.md
 |
 |-- phase-a/
 |   |-- generate_testset.py
